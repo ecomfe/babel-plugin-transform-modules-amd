@@ -1,6 +1,6 @@
 {
     "name": "babel-plugin-transform-modules-amd",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "es2015 module tranformer for amd",
     "repository": {
         "type": "git",
