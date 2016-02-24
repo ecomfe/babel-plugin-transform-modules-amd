@@ -4,7 +4,7 @@
     "description": "es2015 module tranformer for amd",
     "repository": {
         "type": "git",
-        "url": "http://gitlab.baidu.com/chengxin/babel-plugin-transform-modules-amd.git"
+        "url": "http://gitlab.baidu.com/babel/babel-plugin-transform-modules-amd.git"
     },
     "license": "MIT",
     "main": "lib/index.js",
