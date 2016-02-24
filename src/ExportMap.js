@@ -251,6 +251,7 @@ export default class ExportMap {
                 let ref = map.add(source.value, path.node._blockHoist);
 
                 for (let i = 0; i < specifiers.length; i++) {
+
                     let specifier = specifiers[i];
 
                     let local = specifier.node.local;
@@ -262,7 +263,16 @@ export default class ExportMap {
                         nodes.push(buildExportsAssignment(local, ref));
                     }
                     else if (specifier.isExportSpecifier()) {
-                        nodes.push(buildExportsAssignment(local, t.memberExpression(ref, local)));
+
+                        let exported = specifier.node.exported;
+
+                        // 导出默认引用
+                        if (local.name !== 'default') {
+                            nodes.push(buildExportsAssignment(exported, t.memberExpression(ref, local)));
+                        }
+                        else {
+                            nodes.push(buildExportsAssignment(exported, ref));
+                        }
                     }
                 }
             }
