@@ -1,0 +1,20 @@
+{
+    "plugins": [
+        "transform-es2015-function-name",
+        "transform-es2015-spread",
+        "transform-es2015-parameters",
+        "transform-es2015-destructuring",
+        "transform-object-rest-spread",
+        "transform-class-properties",
+        "transform-es2015-modules-commonjs",
+        [
+            "transform-runtime",
+            {
+                "polyfill": false,
+                "regenerator": false
+            }
+        ]
+    ],
+    "compact": false,
+    "comments": false
+}

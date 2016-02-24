@@ -1,0 +1,37 @@
+{
+    "name": "babel-plugin-transform-modules-amd",
+    "version": "1.0.0",
+    "description": "es2015 module tranformer for amd",
+    "repository": {
+        "type": "git",
+        "url": "http://gitlab.baidu.com/chengxin/babel-plugin-transform-modules-amd.git"
+    },
+    "license": "MIT",
+    "main": "lib/index.js",
+    "dependencies": {
+        "babel-runtime": "^5.0.0",
+        "babel-template": "^6.3.13",
+        "babel-types": "^6.5.2"
+    },
+    "author": [
+        {
+            "name": "zongyu",
+            "email": "liuxuanzy@qq.com"
+        }
+    ],
+    "devDependencies": {
+        "babel-plugin-transform-class-properties": "^6.5.2",
+        "babel-plugin-transform-es2015-destructuring": "^6.5.0",
+        "babel-plugin-transform-es2015-function-name": "^6.5.0",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.5.2",
+        "babel-plugin-transform-es2015-parameters": "^6.5.0",
+        "babel-plugin-transform-es2015-spread": "^6.5.2",
+        "babel-plugin-transform-object-rest-spread": "^6.5.0",
+        "babel-plugin-transform-runtime": "^6.5.2"
+    },
+    "node": "4.2.2",
+    "keywords": [
+        "babel-plugin"
+    ],
+    "readme": "README.md"
+}
