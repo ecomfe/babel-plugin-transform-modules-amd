@@ -176,11 +176,17 @@ export default class ExportMap {
         }
         else {
 
-            let ref = scope.generateUidIdentifier('var');
-            path.replaceWith(t.variableDeclaration('var', [
-                t.variableDeclarator(ref, declaration.node)
-            ]));
-            this.lastDefaultExportIdentifier = ref;
+            if (t.isIdentifier(declaration.node)) {
+                this.lastDefaultExportIdentifier = declaration.node;
+                path.remove();
+            }
+            else {
+                let ref = scope.generateUidIdentifier('var');
+                path.replaceWith(t.variableDeclaration('var', [
+                    t.variableDeclarator(ref, declaration.node)
+                ]));
+                this.lastDefaultExportIdentifier = ref;
+            }
         }
     }
 

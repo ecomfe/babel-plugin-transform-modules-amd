@@ -17,6 +17,7 @@ let buildFactory = template(`
 module.exports = function ({types: t}) {
 
     return {
+        inherits: require("babel-plugin-syntax-export-extensions"),
 
         visitor: {
 
