@@ -1,6 +1,6 @@
 {
     "name": "babel-plugin-transform-modules-amd",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "es2015 module tranformer for amd",
     "repository": {
         "type": "git",
@@ -13,12 +13,10 @@
         "babel-template": "^6.3.13",
         "babel-types": "^6.5.2"
     },
-    "author": [
-        {
-            "name": "zongyu",
-            "email": "liuxuanzy@qq.com"
-        }
-    ],
+    "author": {
+        "name": "zongyu",
+        "email": "liuxuanzy@qq.com"
+    },
     "keywords": [
         "babel-plugin",
         "amd"

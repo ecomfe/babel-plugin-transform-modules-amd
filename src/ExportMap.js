@@ -12,7 +12,7 @@ let buildExportsAssignment = template(`exports.$0 = $1;`);
 let buildExportExpression = template(`var exports = {};`);
 
 let buildExportsAllAssignment = template(`
-    for (let KEY in OBJECT) {
+    for (var KEY in OBJECT) {
         if(Object.prototype.hasOwnProperty.call(OBJECT, KEY)) {
             exports[KEY] = OBJECT[KEY];
         }
